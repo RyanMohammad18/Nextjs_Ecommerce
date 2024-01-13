@@ -37,18 +37,14 @@ export default function ProductDetailPage({ params }) {
               <hr className="my-3" />
               Description:
               <p>{product.description}</p>
+              <p> Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet </p>
+              <div>Price</div>
+              <div>
+                <h1 className="text-red-500 font-bold">{product.price} tk</h1>
+              </div>
+              <AddToCart product={product} redirect={true} />
             </li>
           </ul>
-        </div>
-        <div>
-          <div className="card p-5">
-            <div className="mb-2 flex justify-between">
-              <div>Price</div>
-              <div>${product.price}</div>
-            </div>
-
-            <AddToCart product={product} redirect={true} />
-          </div>
         </div>
       </div>
     </div>
