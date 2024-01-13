@@ -8,8 +8,8 @@ export default function ProductItem({ product }) {
       <Link href={`/product/${product.id}`}>
         <Image
           src={product.image}
-          width={60} // Set the width to your desired size
-          height={60} // Set the height to your desired size
+          width={60} 
+          height={60}
           alt={product.name}
           className="rounded shadow object-cover w-60 h-60"
           layout="fixed"

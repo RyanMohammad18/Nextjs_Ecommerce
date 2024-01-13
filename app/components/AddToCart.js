@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useRouter } from "next/navigation";
 import { addToCart } from "@/app/redux/slices/cartSlice";
 
-// ... (previous imports)
+
 
 export default function AddToCart({
   product,
