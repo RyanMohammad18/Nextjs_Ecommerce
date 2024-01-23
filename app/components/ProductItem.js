@@ -1,4 +1,4 @@
-"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import AddToCart from "./AddToCart";
@@ -9,10 +9,10 @@ export default function ProductItem({ product }) {
       <Link href={`/product/${product.id}`}>
         <Image
           src={product.image}
-          width={60} 
-          height={60}
+          width={600} 
+          height={600}
           alt={product.name}
-          className="rounded shadow object-cover w-60 h-60"
+          className="rounded shadow object-cover"
           layout="fixed"
           objectFit="cover"
         />
