@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import App from './components/App'
 import { StoreProvider } from './redux/StoreProvider'
+import Head from 'next/head'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,9 +19,19 @@ export default function RootLayout({ children }) {
         <StoreProvider>
           <App>{children}</App>
         </StoreProvider>
-       
-        
-        </body>
+
+
+      </body>
+      <Head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FVTSRDBJW6"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-FVTSRDBJW6');
+        </script>
+      </Head>
     </html>
   )
 }
